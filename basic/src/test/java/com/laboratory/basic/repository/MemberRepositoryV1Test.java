@@ -1,6 +1,6 @@
 package com.laboratory.basic.repository;
 
-import static com.laboratory.basic.h2.ConnectionConst.*;
+import static com.laboratory.basic.connection.h2.ConnectionConst.*;
 import static org.assertj.core.api.Assertions.*;
 
 import java.sql.SQLException;

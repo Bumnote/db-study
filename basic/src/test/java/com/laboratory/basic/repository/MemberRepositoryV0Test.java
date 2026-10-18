@@ -1,12 +1,10 @@
 package com.laboratory.basic.repository;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.sql.SQLException;
 import java.util.NoSuchElementException;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import com.laboratory.basic.domain.Member;

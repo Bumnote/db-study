@@ -1,6 +1,6 @@
-package com.laboratory.basic.connection;
+package com.laboratory.basic.connection.h2;
 
-import static com.laboratory.basic.h2.ConnectionConst.*;
+import static com.laboratory.basic.connection.h2.ConnectionConst.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

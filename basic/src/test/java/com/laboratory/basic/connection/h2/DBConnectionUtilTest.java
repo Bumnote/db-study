@@ -1,4 +1,4 @@
-package com.laboratory.basic.h2;
+package com.laboratory.basic.connection.h2;
 
 import static org.assertj.core.api.Assertions.*;
 

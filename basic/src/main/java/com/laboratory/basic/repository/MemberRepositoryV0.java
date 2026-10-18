@@ -9,8 +9,8 @@ import java.util.NoSuchElementException;
 
 import org.jspecify.annotations.NonNull;
 
+import com.laboratory.basic.connection.h2.DBConnectionUtil;
 import com.laboratory.basic.domain.Member;
-import com.laboratory.basic.h2.DBConnectionUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
