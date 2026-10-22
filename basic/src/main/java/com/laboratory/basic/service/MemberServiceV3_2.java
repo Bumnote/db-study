@@ -1,6 +1,5 @@
 package com.laboratory.basic.service;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 import org.springframework.transaction.PlatformTransactionManager;
@@ -12,7 +11,7 @@ import com.laboratory.basic.repository.MemberRepositoryV3;
 import lombok.extern.slf4j.Slf4j;
 
 /*
- * 트랜잭션 - 트랜잭션 매니저
+ * 트랜잭션 - 트랜잭션 템플릿
  * */
 @Slf4j
 public class MemberServiceV3_2 {
@@ -50,17 +49,6 @@ public class MemberServiceV3_2 {
 	private void validation(Member toMember) {
 		if (toMember.getMemberId().equals("ex")) {
 			throw new IllegalStateException("이체중 예외 발생");
-		}
-	}
-
-	private static void release(Connection conn) {
-		if (conn != null) {
-			try {
-				conn.setAutoCommit(true); // 커넥션 풀 기본값 고려 (true가 기본값)
-				conn.close();
-			} catch (Exception e) {
-				log.info("error", e);
-			}
 		}
 	}
 }

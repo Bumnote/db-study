@@ -19,7 +19,7 @@ import com.laboratory.basic.repository.MemberRepositoryV3;
 import lombok.extern.slf4j.Slf4j;
 
 /*
- * 트랜잭션 - 트랜잭션 매니저
+ * 트랜잭션 - 트랜잭션 템플릿
  * */
 @Slf4j
 class MemberServiceV3_2Test {
